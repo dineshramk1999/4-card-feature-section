@@ -1,0 +1,97 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 15px  ;
+    font-family: 'Poppins', sans-serif;
+    
+}
+header {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 550px;    
+}
+.heading h1{
+    font-weight: 200 !important;
+    padding-bottom: 15px !important;
+    margin: 0;
+}
+.heading h1 .head{
+    font-weight: 400 !important;
+}
+p{
+    color: hsl(229, 6%, 66%);
+}
+.sec .container{
+    max-width: 1300px;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.slide{
+    background-color: #fff;
+    padding: 30px;
+    width: 350px;
+    margin: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    position: relative;
+}
+.slide::after{
+    content: '';
+    position: absolute;
+    color: blue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px 5px 0px 0px ;
+}
+.cyan::after{
+    background-color: hsl(180, 62%, 55%);
+}
+.orange::after{
+    background-color:  hsl(34, 97%, 64%);
+}
+.red::after{
+    background-color: hsl(0, 78%, 62%);
+}
+.blue::after{
+    background-color: hsl(212, 86%, 64%);
+}
+
+.orange:hover{
+    box-shadow: 0 10px 20px hsl(34, 97%, 64%), 0 6px 6px hsl(34, 97%, 64%);
+    transition: all .3s ease;
+}
+.cyan:hover{
+    box-shadow: 0 10px 20px hsl(180, 62%, 55%), 0 6px 6px hsl(180, 62%, 55%);
+    transition: all .3s ease;
+}
+.red:hover{
+    box-shadow: 0 10px 20px hsl(0, 78%, 62%), 0 6px 6px hsl(0, 78%, 62%);
+    transition: all .3s ease;
+}
+.blue:hover{
+    box-shadow: 0 10px 20px hsl(212, 86%, 64%), 0 6px 6px hsl(212, 86%, 64%);
+    transition: all .3s ease;
+    
+    
+}
+
+.slide img{
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+}
+@media (min-width:1200px){
+    html:not(.no-js) [data-aos^=fade][data-aos^=fade].aos-animate {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: translateY(50%) !important;
+    }
+    .blue, .cyan{
+        transform: translateY(50%) !important;
+    }
+}
